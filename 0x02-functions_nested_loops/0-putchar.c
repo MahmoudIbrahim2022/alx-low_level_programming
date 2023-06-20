@@ -8,11 +8,13 @@
 */
 int main(void)
 {
-	char output[50]="_putchar\n";
+	char output[9]="_putchar\n";
 	int i;
 
-	for (i=0; i < 50; i++)
-		{_putchar(output[i]);}
+	for (i=0; i < 9; i++)
+	{
+		_putchar(output[i]);
+       	}
 
 	return (0);
 }
