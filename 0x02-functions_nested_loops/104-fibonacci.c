@@ -8,12 +8,12 @@
 int main(void)
 {
 	int i;
-	long double a = 1;
-	long double b = 2;
-	long double c;
+	double a = 1;
+	double b = 2;
+	double c;
 
-	printf("%0.0LF, ", a);
-	printf("%0.0LF, ", b);
+	printf("%0.0lf, ", a);
+	printf("%0.0lf, ", b);
 
 	for (i = 3; i <= 98; i++)
 	{
@@ -21,10 +21,9 @@ int main(void)
 		a = b;
 		b = c;
 		if (i == 98)
-		printf("%0.0LF\n", c);
+		printf("%0.0lf\n", c);
 		else
-		printf("%0.0LF, ", c);
+		printf("%0.0lf, ", c);
 	}
 	return (0);
 }
-
