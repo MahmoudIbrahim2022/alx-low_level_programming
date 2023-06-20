@@ -8,22 +8,23 @@
 int main(void)
 {
 	int i;
-	long a = 1;
-	long b = 2;
-	long c;
+	long double a = 1;
+	long double b = 2;
+	long double c;
 
-	printf("%lu, ", a);
-	printf("%lu, ", b);
+	printf("%0.0LF, ", a);
+	printf("%0.0LF, ", b);
 
-	for (i = 2; i < 98; i++)
+	for (i = 3; i <= 98; i++)
 	{
 		c = a + b;
 		a = b;
 		b = c;
-		if (i == 97)
-		printf("%lu\n", c);
+		if (i == 98)
+		printf("%0.0LF\n", c);
 		else
-		printf("%lu, ", c);
+		printf("%0.0LF, ", c);
 	}
 	return (0);
 }
+
