@@ -38,7 +38,7 @@ void print_number(int n)
 	else if (n < 0)
 	{
 		n *= -1;
-		_putchar(45);
+		_putchar('-');
 		print_positive_number(n);
 	}
 	else
