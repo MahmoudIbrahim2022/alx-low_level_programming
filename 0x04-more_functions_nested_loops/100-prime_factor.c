@@ -9,7 +9,7 @@
 int main(void)
 {
 	long int n = 612852475143;
-	long int div = 2, ans = 0, maxFact;
+	long int div = 2, maxFact;
 
 	while (n != 0)
 	{
@@ -22,7 +22,6 @@ int main(void)
 			if (n == 1)
 			{
 				printf("%li\n", maxFact);
-				ans = 1;
 				break;
 			}
 		}
