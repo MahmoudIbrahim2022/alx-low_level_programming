@@ -11,7 +11,7 @@
 
 int _atoi(char *s)
 {
-	int i, j = 0, size = 0, number, power = 1, result = 0;
+	int i, j = 0, size = 0, number, power = 1, result = 0, count = 0;
 
 	while (s[size] != '\0')
 	size++;
@@ -29,9 +29,13 @@ int _atoi(char *s)
 			j++;
 		}
 
-		else if (number == 45 && j == i)
-		result = 0 - result;
+		else if (number == 45 && j >= i)
+		count++;
+
 	}
+
+	if (count % 2 != 0)
+	result = 0 - result;
 
 	return (result);
 
