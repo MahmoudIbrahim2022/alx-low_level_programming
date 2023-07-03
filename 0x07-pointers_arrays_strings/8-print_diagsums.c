@@ -30,7 +30,7 @@ void print_diagsums(int *a, int size)
 			if ((i + j) == (size - 1))
 			sum2 += *(a + (j * size + i) * 1);
 		}
-		
+
 
 	}
 
