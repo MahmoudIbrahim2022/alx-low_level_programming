@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * support_function - returns the natural square root of a number.
+ * support_function_sqrt - returns the natural square root of a number.
  * @number: The number
  * @root: The root
  *
- * Return: returns the natural square root of a number.
+ * Return: the natural square root of a number.
  *
  */
 
-int support_function(int number, int root)
+int support_function_sqrt(int number, int root)
 {
 	if ((root * root) > number)
 	return (-1);
@@ -18,7 +18,7 @@ int support_function(int number, int root)
 	return (root);
 
 	else
-	return (support_function(number, root + 1));
+	return (support_function_sqrt(number, root + 1));
 }
 
 /**
@@ -26,7 +26,7 @@ int support_function(int number, int root)
  * @n: The number
  *
  *
- * Return: returns the natural square root of a number.
+ * Return: the natural square root of a number.
  *
  */
 
@@ -35,6 +35,6 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 	return (-1);
 	else
-	return (support_function(n, 0));
+	return (support_function_sqrt(n, 0));
 
 }
