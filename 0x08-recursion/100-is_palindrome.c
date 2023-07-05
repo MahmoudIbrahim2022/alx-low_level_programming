@@ -1,5 +1,21 @@
 #include "main.h"
 
+
+/**
+ * _strlen - returns the length of a string.
+ * @s: The string
+ *
+ * Return: the length of a string.
+ *
+ */
+
+int _strlen(char *s)
+{
+
+	return (*s ? 1 + _strlen_recursion(s + 1) : 0);
+
+}
+
 /**
  * checkPalindrome - returns 1 if a string is a palindrome and 0 if not.
  * @str: The string
@@ -41,7 +57,7 @@ int checkPalindrome(char str[], int first, int last)
 int is_palindrome(char *s)
 {
 
-	int length = _strlen_recursion(s);
+	int length = _strlen(s);
 
 	if (length == 0)
 	return (1);
