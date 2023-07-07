@@ -16,18 +16,19 @@
 int main(int argc, char *argv[])
 {
 	int result = 0;
-	int i;
+	int i, j;
 	int flag = 0;
 
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (*(argv[i]) != 48 && atoi(argv[i]) == 0)
-			flag = 1;
-			else if (atoi(argv[i]) < 0)
-			result = result;
-			else
+			j = 0;
+			while (argv[i][j] != '\0')
+			{
+				if (argv[i][j] < 48 || argv[i][j] > 57)
+				flag = 1;
+			}
 			result += atoi(argv[i]);
 		}
 	}
