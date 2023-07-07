@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
 			{
 				if (argv[i][j] < 48 || argv[i][j] > 57)
 				flag = 1;
+				j++;
 			}
 			result += atoi(argv[i]);
 		}
