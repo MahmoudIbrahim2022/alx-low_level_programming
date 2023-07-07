@@ -1,3 +1,10 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
+
+
+
 /**
  * main - adds positive numbers.
  * @argc: Number of Arguments
