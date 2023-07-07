@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	if (flag == 1)
 	{
 		printf("Error\n");
-		return (0);
+		return (1);
 	}
 	else
 	{
