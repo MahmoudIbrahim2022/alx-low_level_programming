@@ -10,8 +10,8 @@
  * @argc: Number of Arguments
  * @argv: Arguments values
  *
- * Return: 0 (success).
- * Return: 1 (error)
+ * Return: On success 0.
+ * On error, 1 is returned,
  */
 int main(int argc, char *argv[])
 {
@@ -25,6 +25,8 @@ int main(int argc, char *argv[])
 		{
 			if (*(argv[i]) != 48 && atoi(argv[i]) == 0)
 			flag = 1;
+			else if (atoi(argv[i]) < 0)
+			result = result;
 			else
 			result += atoi(argv[i]);
 		}
