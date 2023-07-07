@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+
+
 
 /**
  * main - prints its name, followed by a new line.
@@ -7,17 +10,10 @@
  *
  * Return: Always 0.
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int i = 0;
 
-	while (*(*(argv) + i) != '\0')
-	{
-		_putchar(*(*(argv) + i));
-		i++;
-	}
-
-	_putchar('\n');
+	printf("%s\n", argv[0]);
 
 	return (0);
 }
