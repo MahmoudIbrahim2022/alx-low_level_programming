@@ -6,7 +6,7 @@
 
 
 /**
- * main - multiplies two numbers.
+ * main - adds positive numbers.
  * @argc: Number of Arguments
  * @argv: Arguments values
  *
@@ -14,21 +14,29 @@
  */
 int main(int argc, char *argv[])
 {
-	int result;
+	int result = 0;
+	int i;
+	int flag = 0;
 
-	(void) argc;
-
-	if (argv[1] == NULL || argv[2] == NULL)
+	if (argc > 1)
 	{
-		printf("Error\n");
-		return (1);
+		for (i = 1; i < argc; i++)
+		{
+			if (atoi(argv[i]) == 0)
+			flag = 1;
+			else
+			result += atoi(argv[i]);
+		}
 	}
 
+	if (flag == 1)
+	{
+		printf("Error\n");
+		return (0);
+	}
 	else
 	{
-		result = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", result);
-
 		return (0);
 	}
 }
