@@ -17,9 +17,12 @@ char *create_array(unsigned int size, char c)
 
 	char *ptr = (char *) malloc(size * sizeof(char));
 
-	for (i = 0; i < size; i++)
-	ptr[i] = c;
-
-	return (ptr);
-
+	if (*ptr == 0)
+	return (NULL);
+	else
+	{
+		for (i = 0; i < size; i++)
+		ptr[i] = c;
+		return (ptr);
+	}
 }
