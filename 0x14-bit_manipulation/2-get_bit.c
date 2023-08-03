@@ -5,7 +5,7 @@
  * @n: binary Number
  * @index: bit index
  *
- * Return: void
+ * Return: the value of the bit at index.
  */
 
 int get_bit(unsigned long int n, unsigned int index)
