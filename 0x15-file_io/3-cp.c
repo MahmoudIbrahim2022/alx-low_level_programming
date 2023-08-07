@@ -1,9 +1,9 @@
 #include "main.h"
 
-#define USAGE "cp file_from file_to\n"
-#define ERR_NOREAD "ERROR: Can't read from file %s\n"
-#define ERR_NOWRITE "ERROR: Can't write to %s\n"
-#define ERR_NOCLOSE "ERROR: Can't close fd %d\n"
+#define USAGE "Usage: cp file_from file_to\n"
+#define ERR_NOREAD "Error: Can't read from file %s\n"
+#define ERR_NOWRITE "Error: Can't write to %s\n"
+#define ERR_NOCLOSE "Error: Can't close fd %d\n"
 #define PERMISSIONS (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 
 
